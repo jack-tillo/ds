@@ -13,7 +13,9 @@
     "vue-template-compiler": "^2.6.10"
   },
   "scripts": {
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "bootstrap": "lerna bootstrap",
+    "build:components": "lerna run transpile"
   },
   "dependencies": {
     "vue": "^2.6.10"
