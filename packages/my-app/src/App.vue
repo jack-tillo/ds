@@ -2,17 +2,20 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <my-button>hello there!</my-button>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
+import MyButton from '@mylibrary/my-button';
 
 export default Vue.extend({
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    MyButton
   }
 });
 </script>

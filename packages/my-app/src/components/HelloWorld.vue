@@ -1,34 +1,38 @@
 <template>
-  <div class="hello">
-    <my-button message="hello!"></my-button>
-  </div>
+    <div class="hello">
+        <my-button :message="msg"></my-button>
+    </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue from "vue";
+import MyButton from "@mylibrary/my-button";
 
 export default Vue.extend({
-  name: 'HelloWorld',
-  props: {
-    msg: String,
+  name: "HelloWorld",
+  components: {
+    MyButton
   },
+  props: {
+    msg: String
+  }
 });
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
-  margin: 40px 0 0;
+    margin: 40px 0 0;
 }
 ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 li {
-  display: inline-block;
-  margin: 0 10px;
+    display: inline-block;
+    margin: 0 10px;
 }
 a {
-  color: #42b983;
+    color: #42b983;
 }
 </style>

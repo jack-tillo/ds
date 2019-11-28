@@ -1,5 +1,5 @@
 <template>
-    <button type="button"><slot>{{message}}</slot></button>
+    <button class="red" type="button"><slot>{{message}}</slot></button>
 </template>
 
 <script lang="ts">
@@ -11,3 +11,9 @@ export default Vue.extend({
     }
 });
 </script>
+
+<style scoped>
+.red {
+    color: red;
+}
+</style>

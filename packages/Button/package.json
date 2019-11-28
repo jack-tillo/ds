@@ -2,7 +2,8 @@
     "name": "@mylibrary/my-button",
     "version": "0.1.0",
     "description": "Just a simple button",
-    "main": "dist/index.js",
+    "main": "dist/my-button.js",
+    "types": "src/types.d.ts",
     "module": "src/index.ts",
     "scripts": {
         "transpile": "vue-cli-service build --target lib ./src/index.ts"
